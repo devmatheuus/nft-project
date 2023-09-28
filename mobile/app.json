@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "ProNef",
+    "slug": "pro-nef",
+    "description": "Buy, store, collect NFTs, exchange & earn crypto. Join 25+ million people using ProNef Marketplace",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
@@ -9,7 +10,7 @@
     "splash": {
       "image": "./src/assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#001F2D"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
@@ -17,12 +18,15 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#001F2D"
       }
     },
     "web": {
-      "favicon": "./src/assets/favicon.png"
+      "favicon": "./src/assets/icon.png"
+    },
+    "updates": {
+      "useClassicUpdates": true
     }
   }
 }
