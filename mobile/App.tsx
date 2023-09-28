@@ -3,8 +3,9 @@ import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Home } from './src/screens/Home';
 import { Details } from './src/screens/Details';
+import { RootStackParamList } from './src/interfaces';
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<RootStackParamList>();
 
 const theme = {
   ...DefaultTheme,
@@ -32,7 +33,9 @@ const App = () => {
         initialRouteName="Home"
       >
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="Details">
+          {(props) => <Details {...props} />}
+        </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
